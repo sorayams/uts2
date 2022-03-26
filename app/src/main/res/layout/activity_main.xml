@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView
+            android:layout_width="204dp"
+            android:layout_height="157dp" app:srcCompat="@drawable/pb_01" android:id="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="168dp" app:layout_constraintHorizontal_bias="0.497"/>
+    <Button
+            android:text="ADOPT A DOG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnAdopt"
+            style="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="#4CABDB" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintTop_toBottomOf="@+id/txtSlogan" android:layout_marginTop="12dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnSearch"
+            android:text="ADOPT A CAT" android:backgroundTint="#4CABDB"
+            style="@style/Widget.AppCompat.Button.Colored" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/btnAdopt"
+            android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.498"/>
+    <TextView
+            android:text="Find Your New Best Friend"
+            android:layout_width="188dp"
+            android:layout_height="30dp" android:id="@+id/txtSlogan"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="52dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:editable="false"
+            android:textColor="#4CABDB" android:textAlignment="center" android:textStyle="bold"
+            android:typeface="normal" app:layout_constraintHorizontal_bias="0.497"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
